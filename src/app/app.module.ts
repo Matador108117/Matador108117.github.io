@@ -11,6 +11,8 @@ import { LanguagesComponent } from './languages/languages.component';
 import { InsterestsComponent } from './insterests/insterests.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,10 +26,10 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [
-    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })
