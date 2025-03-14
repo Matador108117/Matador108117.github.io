@@ -43,7 +43,7 @@ jobs:
       - name: list docs
         run: ls -la docs
         
-      - name: GIT commit and push docs
+      - name: GIT commit and push docs1
         env: 
           CI_COMMIT_MESSAGE: save spark results
           CI_COMMIT_AUTHOR: matador108117
@@ -52,7 +52,7 @@ jobs:
              git config --global user.email "zS23004741@estudiantes.uv.mx"
              git add .
              git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-             git push
+             git push origin deploy-release
 
 
 
