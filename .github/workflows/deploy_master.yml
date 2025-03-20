@@ -33,7 +33,7 @@ jobs:
             
       - name: download and run httpd docker imagen
         run:  |
-            docker run -d -name serving_base httpd
+            docker run -d --name serving_base httpd
       
       - name: docker ps
         run:  |
