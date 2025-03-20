@@ -1,4 +1,4 @@
-name: CI/CD deploy release
+name: CI/CD master
 on: 
   pull_request:
     branches: [ "master"]
@@ -30,11 +30,7 @@ jobs:
         
       - name: list dir 
         run: ls -la dist/mycv/browser
-      
-      - name: list container
-        run:  |
-            docker exec serving_base ls-la usr/local/apache2/htcdocs
-      
+            
       - name: download and run httpd docker imagen
         run:  |
             docker run -d -name serving_base httpd
