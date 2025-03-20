@@ -41,11 +41,28 @@ jobs:
       
       - name: cp Angular build to container
         run:  |
-              docker cp dist/mycv/browser/. serving_base/usr/local/apache2/htcdocs
+              docker cp dist/mycv/browser/.  serving_base:/usr/local/apache2/htcdocs
      
       - name: docker custom image
         run:  |
               docker commit --change "ENV MODEL_NAME ${{secrets.MODEL_NAME}}"
               serving_base ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
+     
+      - name: docker images
+        run: docker images
+      
+      - name: docker login
+        env:
+         DOCKER_USER: ${{secrets.DOCKER_USER}}
+         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        
+        run:  |
+            docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+
+      - name: docker push
+        run: docker push ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
+       
+      
+      
             
         
