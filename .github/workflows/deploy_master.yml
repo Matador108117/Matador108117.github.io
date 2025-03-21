@@ -42,6 +42,10 @@ jobs:
         run:  |
             docker ps
       
+      - name: Remove old files
+        run: docker exec serving_base rm -rf /usr/local/apache2/htdocs/*
+
+      
       - name: cp Angular build to containers
         run:  |
               docker cp dist/mycv/browser/.  serving_base:/usr/local/apache2/htcdocs
