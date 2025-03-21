@@ -1,6 +1,6 @@
 name: CI/CD master
 on: 
-  pull_request:
+  push:
     branches: [ "master"]
     
 jobs:
@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: echo 'hello world'
+      - run: echo 'hello worlds'
 
       - name: Use Node.js 20.x
         uses: actions/setup-node@v3
