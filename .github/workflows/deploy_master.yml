@@ -51,7 +51,7 @@ jobs:
               docker cp dist/mycv/browser/.  serving_base:/usr/local/apache2/htcdocs
       - name: show conteiner
         run: |
-              cat dist/mycv/browser/index.html
+              docker exec serving_base cat usr/local/apache2/htcdocs
               
       - name: docker custom image
         run:  |
