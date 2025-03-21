@@ -4,7 +4,7 @@ on:
     branches: [ "master"]
     
 jobs:
-  ci_cd_deploy_release:
+  ci_cd_deploy_master:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -56,8 +56,8 @@ jobs:
          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
         
         run:  |
-            docker login -u $DOCKER_USER -p $DOCKER_CP
-
+            docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+            
       - name: docker push
         run: docker push ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
        
