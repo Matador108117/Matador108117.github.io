@@ -42,7 +42,7 @@ jobs:
         run:  |
             docker ps
       
-      - name: cp Angular build to container
+      - name: cp Angular build to containers
         run:  |
               docker cp dist/mycv/browser/.  serving_base:/usr/local/apache2/htcdocs
       - name: show conteiner
