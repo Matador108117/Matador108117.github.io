@@ -30,6 +30,9 @@ jobs:
         
       - name: list dir 
         run: ls -la dist/mycv/browser
+      
+      - name: cat index
+        run: cat dist/mycv/browser/index.html
             
       - name: download and run httpd docker imagen
         run:  |
