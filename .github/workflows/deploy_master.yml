@@ -52,6 +52,7 @@ jobs:
       - name: show conteiner
         run: |
                docker exec serving_base ls -la /usr/local/apache2/htdocs
+               cocker exex serving_base cat /usr/local/apache2/htdocs/index.html
               
               
       - name: docker custom image
