@@ -48,10 +48,10 @@ jobs:
       
       - name: cp Angular build to containers
         run:  |
-              docker cp dist/mycv/browser/.  serving_base:/usr/local/apache2/htcdocs/index.js
+              docker cp dist/mycv/browser/.  serving_base:/usr/local/apache2/htcdocs
       - name: show conteiner
         run: |
-              docker exec serving_base cat usr/local/apache2/htcdocs
+              docker exec serving_base cat usr/local/apache2/htcdocs/index.js
               
       - name: docker custom image
         run:  |
