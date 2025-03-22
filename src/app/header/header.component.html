@@ -1,18 +1,26 @@
-<table style ="border-collapse: collapse; width: 100%; border: 0.5px solid grey;">
-<tr>
-	<td>
-		{{header.name}}
-		<br>
-                {{header.goalLife}}
-	</td>
-	<td>
-		<img src = "{{header.photoUrl}}" style="max-width:150px; max-height:150px;">
-	</td>
-	<td style="max-width: 200px;" >
-		{{header.email}}<br>
-		{{header.phoneNumber}}<br>
-		{{header.location}}<br>
-		{{header.socialNetwork}}
-		</td>
-	</tr>
+<table class="header-table">
+  <tr>
+    <td class="info-section">
+      <div class="name">{{ header.name }}</div>
+      <p class="goal">{{ header.goalLife }}</p>
+    </td>
+    <td class="image-section">
+      <img src="{{ header.photoUrl }}" alt="Profile Image">
+    </td>
+    <td class="contact-section">
+      <div class="contact-item">
+        <span class="icon">📧</span> {{ header.email }}
+      </div>
+      <div class="contact-item">
+        <span class="icon">📞</span> {{ header.phoneNumber }}
+      </div>
+      <div class="contact-item">
+        <span class="icon">📍</span> {{ header.location }}
+      </div>
+      <div class="contact-item">
+        <span class="icon">🔗</span> {{ header.socialNetwork }}
+      </div>
+    </td>
+  </tr>
 </table>
+

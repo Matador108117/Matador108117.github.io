@@ -1,11 +1,47 @@
-table {
-            border: 0.5px  solid black;
-            border-collapse: collapse;
-        }
+.header-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  background-color: white;
+}
 
-	
-td   {
-            border: 0.5px  solid black;
-            border-collapse: collapse;
+.info-section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
 
-       }
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.goal {
+  font-size: 14px;
+  color: #666;
+  max-width: 300px;
+}
+
+.image-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-section {
+  text-align: left;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.icon {
+  font-size: 16px;
+}
