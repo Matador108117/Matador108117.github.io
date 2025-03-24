@@ -1,26 +1,16 @@
-<table class="header-table">
-  <tr>
-    <td class="info-section">
+
+  <div class="header-container">
+    <div class="info-section">
       <div class="name">{{ header.name }}</div>
       <p class="goal">{{ header.goalLife }}</p>
-    </td>
-    <td class="image-section">
+    </div>
+    <div class="image-section">
       <img src="{{ header.photoUrl }}" alt="Profile Image">
-    </td>
-    <td class="contact-section">
-      <div class="contact-item">
-        <span class="icon">📧</span> {{ header.email }}
-      </div>
-      <div class="contact-item">
-        <span class="icon">📞</span> {{ header.phoneNumber }}
-      </div>
-      <div class="contact-item">
-        <span class="icon">📍</span> {{ header.location }}
-      </div>
-      <div class="contact-item">
-        <span class="icon">🔗</span> {{ header.socialNetwork }}
-      </div>
-    </td>
-  </tr>
-</table>
-
+    </div>
+    <div class="contact-section">
+  
+        <p><span>📧</span> {{ header.email }} </p> 
+        <span>📞</span> {{ header.phoneNumber }}
+        <span>📍</span> {{header.location }}
+        <span>🔗</span> {{ header.socialNetwork }}   
+    </div>

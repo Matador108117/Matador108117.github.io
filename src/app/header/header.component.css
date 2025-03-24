@@ -1,47 +1,36 @@
-.header-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: none;
-  background-color: white;
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 20px;  
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .info-section {
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
 }
 
-.name {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.goal {
-  font-size: 14px;
-  color: #666;
-  max-width: 300px;
+.image-section {
+    display: flex;
+    justify-content: center;
 }
 
 .image-section img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 132px;
+    height: 132px;  
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .contact-section {
-  text-align: left;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
-.icon {
-  font-size: 16px;
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-end;
+    
 }
