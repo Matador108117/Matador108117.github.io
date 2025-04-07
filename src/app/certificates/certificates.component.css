@@ -1,4 +1,16 @@
 
-.certificatre-container {
+.certificate-container {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start; 
+  justify-content:space-between;
+  
+}
+.title-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  font-weight:650;
+  font-style: normal;
 }

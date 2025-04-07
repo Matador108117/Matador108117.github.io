@@ -1,0 +1,26 @@
+.skills-container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+
+  }
+  .title-montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    font-weight:650;
+    font-style: normal;
+  }
+  .skill-box {
+    background-color: #3dd5b0; /* color tipo aqua */
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+  
