@@ -14,5 +14,4 @@ export class InterestsService {
    getInterests() : AngularFirestoreCollection<Interests> {
   return this.interestsRef;
   }
-
 }

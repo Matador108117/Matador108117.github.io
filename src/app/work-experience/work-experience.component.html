@@ -1,11 +1,36 @@
-<div>
+<table class="container">
+	<h3 class="title-montserrat">Work-Experience</h3> 
+	<ul *ngFor ="let job of workExperience;" class ="work-container">
+        <li class = "merriweather-auto">
+               <div class ="skill-box"></div>
+               <div>  {{ job.startDate}}   -   {{job.endDate}} <i> {{job.location}} </i> <br>
+                {{ job.position }} <br>
+                {{ job.accomplishment }} <br>
+                </div>
+        </li>
+</ul>
+
+</table>
+
+
+
+
+
+<!---------------<div class = "container">
 	<h3 class ="title-montserrat" >Work-Experience</h3>
-<ul *ngFor ="let job of workExperience;">
-	<li>
+<ul *ngFor ="let job of workExperience;" class = "work-container">
+	<li class="merriweather-auto" >
+		<div class ="skill-box"></div>
+		<div>
 		{{ job.startDate }} - {{ job.endDate }} <i> {{job.location}}  </i> <br>
+		</div>
+		<div>
 		<b>{{ job.position }} </b> <br> 
-		Logros: <br>
-		{{ job.accomplishment }} <br>
+		Logros:
+		</div> 
+		<div>
+		{{ job.accomplishment }}
+		</div>
 	</li>
 </ul>
-</div>
+</div> ----->

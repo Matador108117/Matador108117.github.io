@@ -7,7 +7,7 @@
     align-items: flex-start; /* Alinea verticalmente */
     gap: 5px; /* Espacio entre elementos */
     margin-bottom: 5px;
-}
+} 
 
 .language-bar {
     display: flex;

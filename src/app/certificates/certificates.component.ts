@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
   styleUrl: './certificates.component.css'
 })
 export class CertificatesComponent {
- certificates : Certificates =  new Certificates ();
+ certificates :  Certificates[] = [ ];
    constructor(public certificatesService: CertificatesService){ 
     console.log(this.certificatesService);
     this.certificatesService.getCertificates().snapshotChanges().pipe(
@@ -19,7 +19,7 @@ export class CertificatesComponent {
                )
           )
     ).subscribe (data => {
-     this.certificates = data[0];
+     this.certificates = data;
      console.log(this.certificates);
     });
   }
