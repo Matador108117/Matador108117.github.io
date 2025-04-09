@@ -1,3 +1,85 @@
-.main-table {
-  
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+.main-container {
+    gap: 20px;
+    width: 95%;
+    height: 500px   ;
+    max-height: 550px;
+    max-width: 1200px;  
+    margin: 0 auto; 
+    padding: 20px;
+    border-radius: 8px; 
+    display: grid;
+    grid-template:  
+        "header  header" 200px
+        "line    line"  auto 
+        "work-experience skills" auto  
+        "education certificates"  auto
+        "languages interests" auto/ 
+        1fr 1fr
+                  
+    ; 
+
+
+    .app-header {
+        grid-area: header;
+
+    }
+    .line{
+        grid-area: line;
+        border-bottom: 2px solid #989898; 
+        padding: 25px;
+
+    }
+
+    .app-work-experience {
+        grid-area: work-experience;
+    }
+
+    .app-skills {
+        grid-area: skills;
+    }
+
+    .app-education {
+        grid-area: education;
+    }
+
+    .app-certificates {
+        grid-area: certificates;
+    }
+
+    .app-languages{
+        grid-area: languages;
+    }
+
+    .app-interests {
+        grid-area: interests;
+    }
+}
+
+
+.app-skills,
+
+.app-languages,
+.app-insterests {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+ 
+}
+
+.roboto-slab-title-font {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+    

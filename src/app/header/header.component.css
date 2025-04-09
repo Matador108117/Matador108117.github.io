@@ -1,47 +1,64 @@
-.header-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: none;
-  background-color: white;
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'); 
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px;  
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); 
+    height: 100%;
 }
+.boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    font-weight: 550;
+    font-style: normal;
+  }
+
+.merriweather-auto {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
 
 .info-section {
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
 }
 
-.name {
-  font-size: 24px;
-  font-weight: bold;
+.icon-section {
+    display: flex;
+    justify-content: center;
+   
 }
-
-.goal {
-  font-size: 14px;
-  color: #666;
-  max-width: 300px;
-}
+ 
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
 
 .image-section img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 155px;
+    height: 155px;  
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .contact-section {
-  text-align: left;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
-.icon {
-  font-size: 16px;
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-end;
 }

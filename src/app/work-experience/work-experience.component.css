@@ -1,0 +1,66 @@
+.title-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  font-weight:650;
+  font-style: normal;
+}
+.merriweather-auto {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  padding-right:  20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  gap: 10px;
+  text-align: left;
+}
+.container h3{
+  padding-left: 20px;
+}
+.work-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.work-container li {
+  display: flex;
+  width: 100%;
+  gap: 10px; 
+  padding-top: 20px;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+
+  font-size: 16px;
+}
+.skill-box {
+  width: 60px; /* tamaño uniforme */
+  height: 90px;
+  margin-right: 20px;
+  background-color: #3dd5b0; /* azul tipo NovoResume */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skill-name {
+flex: 1;
+text-align: left;
+color: #333;
+}

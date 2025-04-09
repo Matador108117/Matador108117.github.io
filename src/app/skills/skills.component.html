@@ -1,6 +1,5 @@
-<table>
-	<h3>Lenguages </h3> 
-	{{skills.languagues}} <br>
-	<h3>Technologies </h3> 
-	{{skills.Areas}} <br>
-</table>
+<h3 class ="title-montserrat">Skills, Languages and Technologies</h3>
+<div class="skills-container">
+   <div class ="skill-box" *ngFor="let skill of allSkills "> {{skill}}  </div>
+</div>
+
