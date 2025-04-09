@@ -1,7 +1,11 @@
-<table style ="border-collapse: collapse; width: 100%;">
-       <h3>Certifications </h3>
-	<p>{{certificates.title}} </p> <br>
-	<p> {{certificates.Institute}} </p>
-	<p> {{certificates.date}} </p>
-	
-</table>
+<div class="container">
+        <h3 class="title-montserrat">Certificates</h3> 
+        <ul *ngFor="let job of certificates;" class="work-container">
+          <li class="merriweather-auto">
+            <p class="text"><i class="fa-solid fa-certificate icon"></i>{{ job.title }}</p>
+            <p class="text"><i class="fa-solid fa-building-columns icon"></i>{{ job.Institute }}</p>
+            <p class="white-text"><i class="fa-solid fa-calendar-days icon"></i>{{ job.date }}</p>
+          </li>
+        </ul>
+      </div>
+      

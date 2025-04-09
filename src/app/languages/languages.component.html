@@ -1,8 +1,11 @@
-<table> 
-	<h3>Languages</h3>
-	<ul *ngFor = "let lan of language;">
+<table class="language-container"> 
+	<h3 class = "title-montserrat">Languages</h3>
+	<ul *ngFor = "let lan of language;" class ="language-bar">
 		<p>{{lan.language}}</p>
-		<p>{{lan.percentage}}</p> 
+		<div class="progress-bar">
+			<div class="progress-fill" [ngStyle]="{'width': lan.percentage}"></div>
+		</div>
+		<p class="percentage">{{lan.percentage}}</p>
 
 	</ul>
 </table>
