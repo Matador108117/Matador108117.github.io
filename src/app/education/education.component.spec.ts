@@ -13,7 +13,7 @@ describe('EducationComponent', () => {
     .compileComponents();
 
     fixture = TestBed.createComponent(EducationComponent);
-    component = fixture.componentInstance;
+    component = fixture.componentInstance; 
     fixture.detectChanges();
   });
 

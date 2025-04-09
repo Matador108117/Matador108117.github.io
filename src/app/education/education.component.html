@@ -1,10 +1,12 @@
-<table>
-	<h3>Education12</h3> 
-	<ul *ngFor ="let job of education;">
-        <li>
-                {{ job.grade}} <br>
+<table class="container">
+	<h3 class="title-montserrat">Education</h3> 
+	<ul *ngFor ="let job of education;" class ="education-container">
+        <li class = "merriweather-auto">
+               <div class ="skill-box"></div>
+               <div>  {{ job.grade}} <br>
                 {{ job.educativeInstitute }} <br>
                 {{ job.date }} <br>
+                </div>
         </li>
 </ul>
 

@@ -9,6 +9,7 @@ import { map } from 'rxjs/operators';
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
+  allSkills : string [] = [];
 	skills : Skills = new Skills(); 
   constructor (public skillsService: SkillsService) {
     this.skillsService.getSkills().snapshotChanges().pipe(
@@ -19,7 +20,9 @@ export class SkillsComponent {
           )
     ).subscribe (data => {
      this.skills = data[0];
+     this.allSkills = (this.skills.languagues ?? '').split(',').concat((this.skills.Areas ?? '').split(','));
      console.log(this.skills);
+     console.log(this.allSkills);
     });
 
   }

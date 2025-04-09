@@ -1,18 +1,19 @@
-<table style ="border-collapse: collapse; width: 100%; border: 0.5px solid grey;">
-<tr>
-	<td>
-		{{header.name}}
-		<br>
-                {{header.goalLife}}
-	</td>
-	<td>
-		<img src = "{{header.photoUrl}}" style="max-width:150px; max-height:150px;">
-	</td>
-	<td style="max-width: 200px;" >
-		{{header.email}}<br>
-		{{header.phoneNumber}}<br>
-		{{header.location}}<br>
-		{{header.socialNetwork}}
-		</td>
-	</tr>
-</table>
+<script src="https://kit.fontawesome.com/tu_codigo_aqui.js" crossorigin="anonymous"></script>
+
+  <div class="header-container">
+    <div class="info-section">
+      <div class="name boldonse-regular">{{ header.name }}</div>
+      <br>
+      <p class="goal" class = "merriweather-auto">{{ header.goalLife }}</p>
+    </div>
+    <div class="image-section">
+      <img src="{{ header.photoUrl }}" alt="Profile Image">
+    </div>
+    <div class="contact-section">
+        <p class = "merriweather-auto"><img  src ="sobre.png"  class="icon"> {{ header.email }} </p> 
+
+       <p><img  src = "llamada-telefonica.png" class = "icon">{{ header.phoneNumber }}</p>
+        <p><img  src = "marcador.png" class = "icon">{{header.location }} </p>
+        <p><img  src = "clip-vertical.png" class = "icon"> {{ header.socialNetwork }} </p>
+  
+    </div>
